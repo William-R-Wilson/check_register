@@ -1,0 +1,26 @@
+<h1>Write Checks</h1>
+<div>
+<%= form_for(Check.new) do |f| %>
+
+
+  <div>
+    <%= f.label :date %>
+    <%= f.text_field :date %>
+  </div>
+  
+  <div>
+    <%= f.label :to %>
+    <%= f.text_field :to %>
+  </div>
+    
+  <div>
+    <%= f.label :amount %>
+    $<%= f.text_field :amount %>
+  </div>
+  
+  <div>
+    <%= f.submit %>
+  </div>
+  
+<% end %>
+</div>  
