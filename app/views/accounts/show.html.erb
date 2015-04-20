@@ -1,0 +1,9 @@
+<div><%= @account.name %>, Balance: <%= number_to_currency(@account.balance) %></div>
+<ul>
+<% @account.checks.each do |check| %>
+  <li><%= check.date %>, <%= check.to %>, <%= check.amount %></ul>
+<% end %>
+</ul>
+  
+
+<div><%= link_to "Delete", @account, method: :delete, data: { confirm: "Are you sure?" } %></div>

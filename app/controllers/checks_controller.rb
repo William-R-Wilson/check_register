@@ -1,6 +1,7 @@
 class ChecksController < ApplicationController
     
   def new
+    @account_options = Account.all.map{ |a| [a.name, a.id ] }
     @check = Check.new
   end
   
@@ -15,18 +16,24 @@ class ChecksController < ApplicationController
   end
   
   def show
-    @check = Check.find_by(params[:id])
+    @check = Check.find(params[:id])
+    @account = Account.where(id: @check.account_id)
   end
   
   def index
     @checks = Check.all
   end
   
+  def destroy
+    Check.find(params[:id]).destroy
+    flash[:success] = "Check deleted"
+    redirect_to checks_url
+  end
   
   private
   
     def check_params
-      params.require(:check).permit(:date, :amount, :to)
+      params.require(:check).permit(:date, :amount, :to, :account_id)
     end
   
 end

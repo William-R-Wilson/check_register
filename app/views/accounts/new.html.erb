@@ -1,0 +1,22 @@
+<h1>Create a new account</h1>
+
+<div>
+<%= form_for(Account.new) do |f| %>
+
+
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  
+  <div>
+    <%= f.label :balance %>
+    <%= f.text_field :balance %>
+  </div>
+  
+  <div>
+    <%= f.submit %>
+  </div>
+  
+<% end %>
+</div>  

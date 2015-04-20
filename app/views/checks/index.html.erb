@@ -1,7 +1,7 @@
 
 
 <ul><% @checks.each do |check| %>
-  <li>Paid to: <%= check.to %>, Amount: <%= number_to_currency(check.amount) %>, Date: <%= check.date %></li>
+  <li>Date: <%= check.date %>, Paid to: <%= check.to %>, Amount: <%= number_to_currency(check.amount) %>, <%= link_to "View", check_path(check) %></li>
   <% end %>
 </ul>
 

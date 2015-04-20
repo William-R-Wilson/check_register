@@ -1,0 +1,4 @@
+<h1><%= @check_id %></h1>
+<div><%= @check.date %>, <%= @check.to %>, Amount: <%= @check.amount %>, From: <%= @check.account.name %></div>
+<div><%= link_to "Delete", @check, method: :delete, data: { confirm: "Are you sure?" } %></div>
+<div><%= link_to "Back to list of checks", checks_path %></div>
