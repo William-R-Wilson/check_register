@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id = "navbar">
+  <ul>
+    <li><%= link_to "Accounts", accounts_path %></li>
+    <li><%= link_to "Checks", checks_path %></li>
+    <li><%= link_to "Write a check", new_check_path %></li>
+  </ul>
+</div>
 
 <%= yield %>
 
