@@ -1,3 +1,35 @@
 // Place all the styles related to the Check controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+fieldset {
+  background-color: #D4BF94;
+  max-width: 50%;
+}
+
+legend {
+  border: 1px solid black;
+  background-color: #F6F2EA;
+}
+
+.date {
+  float: right;
+}
+
+.payable_to {
+  float: left;
+  width: 50%;
+}
+
+
+
+
+.amount {
+  float: right;
+}
+
+.to_and_amount {
+  display: inline;
+}

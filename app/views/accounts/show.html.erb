@@ -10,7 +10,7 @@
   <% @account.checks.each do |check| %>
   <tr>
   <td><%= check.date %></td>
-  <td><%= check.to %></td>
+  <td class = "name"><%= check.to %></td>
   <td><%= number_to_currency(check.amount) %></td>
   </tr>
   <% end %>
