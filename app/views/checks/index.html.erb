@@ -1,8 +1,5 @@
 
 
-<ul><% @checks.each do |check| %>
-  <li>Date: <%= check.date %>, Paid to: <%= check.to %>, Amount: <%= number_to_currency(check.amount) %>, <%= link_to "View", check_path(check) %></li>
-  <% end %>
-</ul>
+<%= render partial:  "checks" %>
 
 <%= link_to "Write a new check", new_check_path %>

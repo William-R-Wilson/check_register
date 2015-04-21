@@ -9,7 +9,6 @@
     <%= f.text_field :date %>
   </div><br />
 
-<div class = "to_and_amount">  
   <div class = "payable_to">
     <%= f.label :to %>
     <%= f.text_field :to, size: 50 %>
@@ -19,9 +18,9 @@
     <%= f.label :amount %>
     $<%= f.text_field :amount %>
   </div>
-</div
+
 <br />
-</fieldset>    
+  
   <div>
     <%= select(:check, :account_id, @account_options) %>
   </div>
@@ -30,3 +29,4 @@
   </div>
   
 <% end %>
+</fieldset>

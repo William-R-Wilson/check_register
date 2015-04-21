@@ -1,19 +1,7 @@
 <h1><%= @account.name %></h1> 
 <h2>Checks</h2>
-<table>
 
-  <tr>
-    <th>Date</th>
-    <th>Paid to</th>
-    <th>Amount</th>
-  </tr>
-  <% @account.checks.each do |check| %>
-  <tr>
-  <td><%= check.date %></td>
-  <td class = "name"><%= check.to %></td>
-  <td><%= number_to_currency(check.amount) %></td>
-  </tr>
-  <% end %>
+<%= render partial:  "checks" %>
   
 <div>Total all checks: <%= number_to_currency(@account.total_expense) %></div>  
 <div>Balance: <%= number_to_currency(@account.current_balance) %></div>
