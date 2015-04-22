@@ -3,24 +3,33 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-fieldset {
-  background-color: #D4BF94;
+.check {
+  height: 200px;
+  background-color: #EBE0CC;
   max-width: 50%;
+  position: relative;
+  border: 1px solid black;
 }
 
-legend {
-  border: 1px solid black;
-  background-color: #F6F2EA;
-}
 
 .date {
   float: right;
+  clear: right;
+  margin: 10px 10px 40px 0;
+  
+  
+}
+
+
+.payable_and_amount {
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .payable_to {
   float: left;
-  width: 50%;
+  margin-left: 10px;
 }
 
 
@@ -28,8 +37,23 @@ legend {
 
 .amount {
   float: right;
+  margin-right: 10px;
+  
 }
 
-.to_and_amount {
-  display: inline;
+.select_and_submit {
+  position: absolute;
+  bottom: 5px;
+  width: 90%;
+}
+
+.submit {
+  float: right;
+  margin-left: 50px;
+}
+
+.select {
+  float: left;
+  margin-left: 10px;
+  padding: 10px;
 }

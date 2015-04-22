@@ -1,32 +1,32 @@
 
-<fieldset>
-  <legend><strong>Write a check</strong></legend>
+
+<strong>Write a check</strong>
+<div class="check">
 <%= form_for(Check.new) do |f| %>
 
 
-  <div class = "date">
+  <div class="date">
     <%= f.label :date %>:
-    <%= f.text_field :date %>
+    <%= f.text_field :date, size: 15 %>
   </div><br />
 
-  <div class = "payable_to">
+
+  <div class="payable_and_amount">
+  <span class="payable_to">
     <%= f.label :to %>
-    <%= f.text_field :to, size: 50 %>
-  </div>
-    
-  <div class = "amount">
+    <%= f.text_field :to, size: 60 %>
+  </span>
+
+  <span class="amount">    
     <%= f.label :amount %>
-    $<%= f.text_field :amount %>
+    $<%= f.text_field :amount, size: 15 %>
+  </span>
   </div>
 
-<br />
-  
-  <div>
-    <%= select(:check, :account_id, @account_options) %>
-  </div>
-  <div>
-    <%= f.submit %>
-  </div>
-  
+  <div class="select_and_submit">  
+    <span class="select"><%= select(:check, :account_id, @account_options) %></span>
+    <span class="submit"><%= f.submit %></span>
+  </div>  
+
 <% end %>
-</fieldset>
+</div>
