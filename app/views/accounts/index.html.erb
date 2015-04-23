@@ -1,6 +1,6 @@
 <ul>
 <% @accounts.each do |account| %>
-  <li><%= account.name %>, Balance: <%= number_to_currency(account.balance) %> | <%= link_to "View", account_path(account) %></li>
+  <li><%= account.name %>, Balance: <%= number_to_currency(account.ending_balance) %> | <%= link_to "View", account_path(account) %></li>
 
 <% end %>
 </ul>

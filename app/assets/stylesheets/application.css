@@ -16,7 +16,7 @@
  
  #navbar li {
   display: inline;
-  background-color: #C2C2C2;
+  background-color: #A9946D;
   border: 1px solid black;
   border-radius: 5%;
   color: black;
@@ -43,4 +43,12 @@
   #navbar a:hover {
     color: gray;
     padding: 4px;
+ }
+ 
+ body {
+   background-color: #EBE0CC;
+ }
+ 
+ input[type = "submit"] {
+   background-color: #A9946D;
  }

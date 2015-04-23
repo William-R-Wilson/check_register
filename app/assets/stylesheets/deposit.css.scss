@@ -1,11 +1,8 @@
-// Place all the styles related to the Check controller here.
+// Place all the styles related to the Deposit controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-
-.check {
+.deposit {
   height: 200px;
   background-color: #C8B89A;
   max-width: 50%;
@@ -23,7 +20,7 @@
 }
 
 
-.payable_and_amount {
+.from_and_amount {
   position: absolute;
   width: 100%;
   margin-top: 40px;

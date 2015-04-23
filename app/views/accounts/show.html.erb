@@ -3,7 +3,8 @@
 
 <%= render partial:  "checks" %>
   
-<div>Total all checks: <%= number_to_currency(@account.total_expense) %></div>  
-<div>Balance: <%= number_to_currency(@account.current_balance) %></div>
+<div>Total all checks: <%= number_to_currency(@account.total_expense) %></div>
+<div>Total all deposits: <%= number_to_currency(@account.total_deposits) %></div>
+<div>Balance: <%= number_to_currency(@account.ending_balance) %></div>
 
 <div><%= link_to "Delete", @account, method: :delete, data: { confirm: "Are you sure?" } %></div>

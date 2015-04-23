@@ -1,0 +1,28 @@
+<strong>Enter a deposit</strong>
+<div class = "deposit">
+<%= form_for(Deposit.new) do |f| %>
+    <div class="date">
+    <%= f.label :date %>:
+    <%= f.text_field :date, size: 15 %>
+  </div><br />
+
+
+  <div class="from_and_amount">
+  <span class="from">
+    <%= f.label :from %>
+    <%= f.text_field :from, size: 60 %>
+  </span>
+
+  <span class="amount">    
+    <%= f.label :amount %>
+    $<%= f.text_field :amount, size: 15 %>
+  </span>
+  </div>
+
+  <div class="select_and_submit">  
+    <span class="select"><%= select(:deposit, :account_id, @account_options) %></span>
+    <span class="submit"><%= f.submit %></span>
+  </div>  
+
+<% end %>
+</div>
