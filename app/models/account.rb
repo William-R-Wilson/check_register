@@ -2,6 +2,7 @@ class Account < ActiveRecord::Base
 
   has_many :checks
   has_many :deposits
+  has_many :transactions
   
   def total_expense
     all_checks = checks.pluck(:amount)
