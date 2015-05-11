@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :accounts
   resources :deposits
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'accounts#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
