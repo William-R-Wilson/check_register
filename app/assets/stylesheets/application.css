@@ -27,24 +27,6 @@
  }
  
 
- 
- 
- 
-  
-  #navbar a:link 
-  {
-    color: black;    
-  }
-
-  #navbar a:visited {
-    color: black;
-  }
-
-  #navbar a:hover {
-    color: gray;
-    padding: 4px;
- }
- 
  body {
    background-color: #EBE0CC;
  }
