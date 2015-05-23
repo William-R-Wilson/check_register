@@ -1,7 +1,7 @@
 class Account < ActiveRecord::Base
 
-  has_many :checks
-  has_many :deposits
+  has_many :checks, dependent: :destroy
+  has_many :deposits, dependent: :destroy
   
   
   def total_expense

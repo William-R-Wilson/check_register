@@ -10,6 +10,7 @@
   <td><%= check.date %></td>
   <td class = "name"><%= check.to %></td>
   <td><%= number_to_currency(check.amount) %></td>
+  <td><%= link_to "delete", check, method: :delete, data: {confirm: "Are you sure?"} %></td>
   </tr>
   <% end %>
 </table>
