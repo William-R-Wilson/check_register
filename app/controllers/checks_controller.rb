@@ -27,7 +27,7 @@ class ChecksController < ApplicationController
   def destroy
     Check.find(params[:id]).destroy
     flash[:success] = "Check deleted"
-    redirect_to checks_url
+    redirect_to accounts_url
   end
   
   private

@@ -17,6 +17,12 @@ class DepositsController < ApplicationController
 
   def show
   end 
+  
+  def destroy
+    Deposit.find(params[:id]).destroy
+    flash[:success] = "Check deleted"
+    redirect_to accounts_url
+  end
 
   private
   
