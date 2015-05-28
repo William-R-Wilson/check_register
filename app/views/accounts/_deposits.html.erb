@@ -10,7 +10,7 @@
   <td><%= deposit.date %></td>
   <td class = "name"><%= deposit.from %></td>
   <td><%= number_to_currency(deposit.amount) %></td>
-  <td><%= link_to "delete", deposit, method: :delete, data: {confirm: "Are you sure?"} %></td>
+  <td><%= link_to "delete", deposit, method: :delete, data: {confirm: "Are you sure?"}, class: "button" %></td>
   </tr>
   <% end %>
 </table>
