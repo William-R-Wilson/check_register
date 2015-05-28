@@ -7,9 +7,10 @@ class AccountsController < ApplicationController
   def create
     @account = Account.new(account_params)
     if @account.save
-      flash[:success] = "new Account created"
+      flash[:success] = "New account created"
       redirect_to accounts_url
     else
+      flash[:danger] = "There were errors in your entry"
       render "new"
     end
   end

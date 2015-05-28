@@ -10,7 +10,8 @@ class DepositsController < ApplicationController
       flash[:success] = "deposit saved"
       redirect_to new_deposit_url
     else
-      render "new"
+      flash[:danger] = "There were errors in your entry"
+      redirect_to new_deposit_url
     end
   end
 
