@@ -8,7 +8,9 @@ class AccountsController < ApplicationController
     @account = Account.new(account_params)
     if @account.save
       flash[:success] = "new Account created"
-      redirect_to @account
+      redirect_to accounts_url
+    else
+      render "new"
     end
   end
       

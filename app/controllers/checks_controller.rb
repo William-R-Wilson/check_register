@@ -11,7 +11,8 @@ class ChecksController < ApplicationController
       flash[:success] = "check saved"
       redirect_to new_check_url
     else
-      render "new"
+      flash[:danger] = "There are errors in your check"
+      redirect_to new_check_url
     end
   end
   

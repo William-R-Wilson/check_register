@@ -22,8 +22,7 @@
   color: black;
   padding: 3px;
   margin-left: 5px;
-
-
+  text-decoration: none;
  }
  
 
@@ -33,4 +32,21 @@
  
  input[type = "submit"] {
    background-color: #A9946D;
+ }
+ 
+ .button {
+   background-color: #A9946D;
+   border-left: 1px solid black;
+   border-top: 1px solid black;
+   border-right: 2px solid black;
+   border-bottom: 2px solid black;
+   text-decoration: none;
+   
+ }
+ 
+ .button:active {
+   border-left: 1px solid black;
+   border-top: 1px solid black;
+   border-right: 2px solid black;
+   border-bottom: 2px solid black;
  }

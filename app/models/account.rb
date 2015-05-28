@@ -2,7 +2,8 @@ class Account < ActiveRecord::Base
 
   has_many :checks, dependent: :destroy
   has_many :deposits, dependent: :destroy
-  
+  validates :name, :balance, presence: true
+  validates :balance, numericality: true
   
   def total_expense
     all_checks = checks.pluck(:amount)
